@@ -51,6 +51,27 @@
         font-size: 96px;
       }
 
+      .grid-2-columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+      }
+
+      .social-links a {
+        margin: 0 5px;
+        color: #700502;
+        background: white;
+        padding: 10px 14px;
+        font-size: 30px;
+        border-radius: 50%;
+        transition: all 100ms ease-in-out;
+      }
+
+      .social-links a:hover {
+        color: white;
+        background: #700502;
+      }
+
       @media (max-width: 900px) and (min-width: 401px) {
         h1 {
           font-size: 48px;
@@ -60,6 +81,12 @@
         }
       }
       @media (max-width: 400px) {
+        h1 {
+          font-size: 96px;
+        }
+        h5 {
+          font-size: 36px;
+        }
       }
     </style>
   </head>
@@ -70,6 +97,46 @@
         <h5>*.Let's explore the magical destination for Harry Potter Fan.*</h5>
       </header>
       <main></main>
+      <section></section>
+      <hr />
+      <footer class="grid grid-2-columns">
+        <div id="about">
+          <h3>About this website</h3>
+          <p>
+            This is the monthly challenge from SheCodes to practice my coding
+            skills. This month is to create a landing page about my dream
+            destination and I chose destinations for Harry Potter Fan🧝‍♀️🌟
+          </p>
+        </div>
+        <div>
+          <h3>About me</h3>
+          <p>
+            I am self-motivated Frontend Web Developer. I have completed
+            Workshop in SheCodes and looking for new opportunity.
+            <br />
+            This page was coded with ♥ by Natsuki Shuko
+          </p>
+          <br />
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/natsukishuko/"
+              target="_blank"
+              class="text-decoration-none"
+              title="Linkedin"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+
+            <a
+              href="https://dream-travel-destination.netlify.app/"
+              target="_blank"
+              class="text-decoration-none"
+              title="GitHub"
+            >
+              <i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
