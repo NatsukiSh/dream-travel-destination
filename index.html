@@ -415,6 +415,14 @@
       <div class="scroll-container">
         <a href="#"><i class="fa-solid fa-triangle">⬆⬆⬆</i></a>
       </div>
+      <iframe
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/album/6zeHM5CV0CjcS0K8ouWE4N?utm_source=generator&theme=0"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
       <hr />
       <footer class="grid grid-2-columns">
         <div id="about">
@@ -453,5 +461,20 @@
         </div>
       </footer>
     </div>
+    <script>
+      function autoplay() {
+        var t = setTimeout(function () {
+          var button = document.querySelector(`[title="Play"]`) || false;
+          if (button) {
+            console.log("Click", button);
+            button.click();
+          }
+        }, timeout);
+      }
+
+      document.addEventListener(`DOMContentLoaded`, (event) => {
+        autoplay();
+      });
+    </script>
   </body>
 </html>
