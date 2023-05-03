@@ -422,6 +422,8 @@
         allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
+        loop="true"
+        muted
       ></iframe>
       <hr />
       <footer class="grid grid-2-columns">
@@ -466,7 +468,7 @@
         var t = setTimeout(function () {
           var button = document.querySelector(`[title="Play"]`) || false;
           if (button) {
-            console.log("Click", button);
+            console.log("click", button);
             button.click();
           }
         }, timeout);
