@@ -91,17 +91,11 @@
       }
 
       .scroll-container {
-        position: absolute;
-        top: 0;
+        margin-right: 20px;
+        overflow: hidden;
+        position: fixed;
         right: 0;
-        height: 100%;
-      }
-
-      .scroll-container:before {
-        content: "";
-        display: block;
-        height: 100vh;
-        pointer-events: none;
+        top: 40%;
       }
 
       .scroll-container a {
@@ -120,7 +114,8 @@
       }
 
       iframe {
-        position: absolute;
+        overflow: hidden;
+        position: fixed;
         top: 350px;
         left: 30px;
       }
@@ -171,7 +166,8 @@
         }
 
         iframe {
-          position: absolute;
+          overflow: hidden;
+          position: fixed;
           top: 214px;
           left: 10px;
         }
