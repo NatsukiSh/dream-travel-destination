@@ -486,6 +486,24 @@
         </div>
       </footer>
     </div>
-    <script></script>
+    <script>
+      var main;
+
+      function setup() {
+        createCanvas(0, 0);
+      }
+
+      function draw() {
+        let w = map(mouseX, 0, windowWidth, 100, 1000);
+
+        let h = windowWidth / 10.5;
+
+        lineH = 1.25;
+
+        main.style("font-weight", w);
+        main.style("font-size", h + "px");
+        main.style("line-height", lineH);
+      }
+    </script>
   </body>
 </html>
