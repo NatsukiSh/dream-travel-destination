@@ -25,6 +25,15 @@
     ></script>
     <title>My dream travel destination</title>
     <style>
+      :root {
+        --special-background: -webkit-linear-gradient(
+          #ff0061,
+          #e1ff00,
+          #951ac6,
+          #00ff9e
+        );
+      }
+
       @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@100..900&display=swap");
 
       body {
@@ -64,21 +73,20 @@
         font-size: 87px;
       }
 
-      main,
-      section {
-        background: -webkit-linear-gradient(#ff0061, #e1ff00, #00ff9e, #1e00ff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
       main h1 {
         font-size: 56px;
         margin: 30px;
+        background: var(--special-background);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
 
       main p {
         text-align: center;
         margin-bottom: 100px;
+        background: var(--special-background);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
 
       section .container-fluid {
@@ -88,6 +96,15 @@
       section h3 {
         text-align: center;
         margin: 30px;
+        background: var(--special-background);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      section p {
+        background: var(--special-background);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
 
       section .location {
