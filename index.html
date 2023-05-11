@@ -178,8 +178,16 @@
         header h1 {
           font-size: 48px;
         }
-        h5 {
+        header h5 {
           font-size: 16px;
+        }
+
+        main h1 {
+          font-size: 45px;
+        }
+
+        main p {
+          font-size: 14px;
         }
 
         iframe {
@@ -189,39 +197,49 @@
           left: 10px;
         }
 
-        @media (max-width: 400px) {
-          header {
-            padding: 25%;
-          }
-          header h1 {
-            font-size: 32px;
-          }
-          header h5 {
-            font-size: 14px;
-          }
+        footer p {
+          font-size: 14px;
+        }
+      }
 
-          section img {
-            width: 20%;
-          }
+      @media (max-width: 400px) {
+        header {
+          padding: 25%;
+        }
+        header h1 {
+          font-size: 32px;
+        }
+        header h5 {
+          font-size: 14px;
+        }
 
-          section img:hover {
-            transform: scale(1.1) rotate(25deg);
-          }
+        section img {
+          width: 20%;
+        }
 
-          .scroll-container a {
-            position: sticky;
-            cursor: pointer;
-            font-size: 8px;
-            color: #700502;
-            background: transparent;
-            padding: 2px 4px;
-            border-radius: 50%;
-          }
+        section img:hover {
+          transform: scale(1.1) rotate(25deg);
+        }
 
-          .scroll-container a:hover {
-            color: white;
-            background: #700502;
-          }
+        .scroll-container a {
+          position: sticky;
+          cursor: pointer;
+          font-size: 8px;
+          color: #700502;
+          background: transparent;
+          padding: 2px 4px;
+          border-radius: 50%;
+        }
+
+        .scroll-container a:hover {
+          color: white;
+          background: #700502;
+        }
+
+        iframe {
+          position: relative;
+          top: -50px;
+          left: 50px;
         }
       }
     </style>
